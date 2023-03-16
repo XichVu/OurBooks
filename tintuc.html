@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tin Tức </title>
+    <link href="data/image/icon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link href="main.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="/font/fontawesome-free-5.15.4-web/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <!-- Logo -->
+        <a href="#top">
+            <img src="data/image/logo.png" id="logo" width="200px">
+        </a>
+        <div class="header-img">
+            <img class="header-img1" src="/data/image/header-img1.png" />
+            <img class="header-img2" src="/data/image/header-img2.png" />
+            <img class="header-img3" src="/data/image/header-img3.png" />
+        </div>
+        <!-- Thanh điều hướng -->
+        <div class="listNav">
+            <nav class="nav-dieuhuong">
+                <a class="navItem" href="trangchu.html" target="_blank">Trang Chủ</a>
+                <a class="navItem" href="gioithieu.html" target="_blank">Giới Thiệu</a>
+                <a class="navItem" href="sanpham.html" target="_blank">Sản Phẩm</a>
+                <a class="navItem" href="tintuc.html" target="_blank">Tin Tức</a>
+                <a class="navItem" href="dangnhap.html" target="_blank">Đăng Nhập</a>
+                <a class="navItem" href="dangky.html" target="_blank">Đăng Ký</a>
+                <a class="navItem" href="lienhe.html" target="_blank">Liên Hệ</a>
+            </nav>
+            <!-- Tìm kiếm  -->
+            <nav class="nav-timkiem">
+                <div>
+                    <form method="GET" name="regForm" onsubmit="return sendData()" action="./timkiem.html">
+                        <input type="text" name="timkiem" class="textNav" placeholder="Nhập nội dung cần tìm...">
+                        <button class="searchNav" type="submit">
+                                <i class="header__search-btn-icon fas fa-search"></i>
+                            </button>
+                    </form>
+                </div>
+                <div class="dathang">
+                    <button class="cartNav">
+                            <i class="header__cart-icon fas fa-shopping-cart"></i>
+                        </button>
+                </div>
+            </nav>
+            <div>
+    </header>
+
+    <main>
+        <div class="row">
+            <!-- Hình nổi bật  -->
+            <div class="col-12 p-2">
+                <img class="noibat" src="data/image/trangchu/noibat1.jpg">
+            </div>
+            <div class="col-3">
+                <aside>
+                    <h1>Tác Giả Nổi Bật</h1>
+                    <div class="article__div-asd">
+                        <div class="article__paragraph-asd">
+                            <img class="book-img-asd" src="data/image/tintuc/tacgia.jpg" alt="image">
+                            <h3>Nguyên Phong</h3>
+                            <p>Nguyên Phong tên thật là Vũ Văn Du, sinh năm 1950 tại Hà Nội. Năm 1968, ông rời khỏi Việt Nam, sang Hoa Kỳ du học hai nghành Sinh vật học và Điện toán, sau đó ông sống và làm việc tại Hoa Kỳ cho đến nay.
+                                <a href="#">Xem chi tiết</a>
+                            </p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+            <div class="col-9 py-5">
+                <h1>OurBooks SALE</h1>
+                <div class="row py-3">
+                    <div class="col-4">
+                        <img class="book-img" src="data/image/tintuc/cvtd.png" alt="image" width="50%">
+                        <div class="article__paragraph">
+                            <p>Cầu vồng trong đêm - Tập 1</p>
+                            <p>Giá mới: 38.000</p>
+                            <p>Giá cũ: 68.000</p>
+                            <button>Đặt hàng</button>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <img class="book-img" src="data/image/tintuc/pndo.png" alt="image" width="50%">
+                        <div class="article__paragraph">
+                            <p>Phụ nữ, đàn ông và kinh tế</p>
+                            <p>Giá mới: 70.000</p>
+                            <p>Giá cũ: 100.000</p>
+                            <button>Đặt hàng</button>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <img class="book-img" src="data/image/tintuc/nncv.png" alt="image" width="50%">
+                        <div class="article__paragraph">
+                            <p>Nhọc nhằn cửu vạn</p>
+                            <p>Giá mới: 65.000</p>
+                            <p>Giá cũ: 95.000</p>
+                            <button>Đặt hàng</button>
+                        </div>
+                    </div>
+                </div>
+                <h1>CÁC SÁCH BÁN CHẠY NHẤT</h1>
+
+                <div class="row py-3">
+
+                    <div class="col-4">
+                        <img class="book-img" src="data/image/tintuc/yebm.jpg" alt="image" width="50%">
+                        <div class="article__paragraph">
+                            <p>Yêu Em Bằng Mắt, Giữ Em Bằng Tim</p>
+                            <p>175.000</p>
+                            <button>Đặt hàng</button>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <img class="book-img" src="data/image/tintuc/dytn.jpg" alt="image" width="50%">
+                        <div class="article__paragraph">
+                            <p>Đừng Yêu Thầm Nữa, Tỏ Tình Đi</p>
+                            <p>86.000</p>
+                            <button>Đặt hàng</button>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <img class="book-img" src="data/image/tintuc/ngdb.jpg" alt="image" width="50%">
+                        <div class="article__paragraph">
+                            <p>Nguồn Gốc Dịch Bệnh</p>
+                            <p>249.000</p>
+                            <button>Đặt hàng</button>
+                        </div>
+                    </div>
+
+                </div>
+                <h1>SÁCH MỚI NHẤT</h1>
+
+                <div class="row py-3">
+                    <div class="col-4">
+                        <img class="book-img" src="data/image/tintuc/ttkt.jpg" alt="image" width="50%">
+                        <div class="article__paragraph">
+                            <p>Tin Tức Kiến Tạo - Constructive News</p>
+                            <p>90.000</p>
+                            <button>Đặt hàng</button>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <img class="book-img" src="data/image/tintuc/cttlnvs.jpg" alt="image" width="50%">
+                        <div class="article__paragraph">
+                            <p>Chúng Ta Thấy Lại Những Vì Sao</p>
+                            <p>128.000</p>
+                            <button>Đặt hàng</button>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <img class="book-img" src="data/image/tintuc/ts.jpg" alt="image" width="50%">
+                        <div class="article__paragraph">
+                            <p>Tỏa Sáng - Jessica Jung</p>
+                            <p>95.000</p>
+                            <button>Đặt hàng</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-6">
+                <h3>RA MẮT APP BÁN SÁCH OurBooks TRÊN NỀN TẢNG IOS</h3>
+                <div class="article__div">
+                    <div class="article__paragraph">
+                        <p>Nhằm mang đến cho tất cả khách hàng những trải nghiệm thú vị nhất nhà sách OurBooks giới thiệu app đặt hàng độc đáo, giúp khách hàng mua sắm được mọi lúc mọi nơi với nhiều tiện ích.
+                            <a href="#">Xem chi tiết</a>
+                        </p>
+                    </div>
+                    <img class="book-img" src="data/image/tintuc/app.jfif" alt="image" width="50%">
+                </div>
+            </div>
+            <div class="col-6">
+                <h3>ĐĂNG KÝ THÀNH VIÊN – NHẬN NGAY ƯU ĐÃI</h3>
+                <div class="article__div">
+                    <div class="article__paragraph">
+                        <p>Nhà sách OurBooks hân hạnh mang đến chương trình "Đăng Ký Thành Viên" với nhiều ưu đãi độc đáo. Member Card – thẻ thành viên nhà sách OurBooks dành cho tất cả khách hàng đăng kí tài khoản và phát sinh đơn hàng.
+                            <a href="#">Xem chi tiết</a>
+                        </p>
+                    </div>
+                    <img class="book-img-dktv" src="data/image/tintuc/dk.jfif" alt="image" width="50%">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <p>Công Ty Kinh Doanh Sách OurBooks</p>
+            <p>Khu II, đường 3/2, P. Xuân Khánh, Q. Ninh Kiều, TP. Cần Thơ.</p>
+            <p>Điện thoại: (84-393) 999999 - (84-393) 8888888; Fax: (84-393) 8888888; Email: ourbooks@gmail.com.</p>
+
+        </div>
+        <a> &copy; 2021 Bản quyền thuộc về <b>OurBooks.</b> </a> &nbsp;
+        <a href="https://www.facebook.com/" class="footer-mxh"> <i class="fab fa-facebook-f"></i> </a> &nbsp;
+        <a href="https://twitter.com/?lang=vi" class="footer-mxh"> <i class="fab fa-twitter"></i> </a> &nbsp;
+        <a href="https://www.pinterest.com/" class="footer-mxh"> <i class="fab fa-pinterest"></i> </a> &nbsp;
+        <a href="#" id="top" class="footer-top-page">
+            <img class="footer-top-page" src="data/image/top.png" alt="Image">
+        </a>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
